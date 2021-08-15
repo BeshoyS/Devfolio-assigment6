@@ -1,531 +1,542 @@
 /* General Vars */
 
 :root {
-    --font: 'Roboto', sans-serif;
-    --white-color: #fff !important;
-    --blue-color: #0078ff;
-    --body-bg-color: #f5f5f5;
-    --heading-color: #1e1e1e;
-    --p-color: #4e4e4e;
-    --footer-bg-color: #0062d3;
-    --border-hover-color: #cde1f8;
-    --btn-hover-color: #3393ff;
+  --font: "Roboto", sans-serif;
+  --white-color: #fff !important;
+  --blue-color: #0078ff;
+  --body-bg-color: #f5f5f5;
+  --heading-color: #1e1e1e;
+  --p-color: #4e4e4e;
+  --footer-bg-color: #0062d3;
+  --border-hover-color: #cde1f8;
+  --btn-hover-color: #3393ff;
 }
 
 body {
-    background-color: var(--body-bg-color);
-    font-family: var(--font);
+  background-color: var(--body-bg-color);
+  font-family: var(--font);
 }
 
 /* Headings */
 
 h1 {
-    font-size: 4.5rem;
+  font-size: 4.5rem;
 }
 
 h2 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 h3 {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 h3.typed {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 p {
-    color: var(--p-color);
+  color: var(--p-color);
 }
 
 /* Nav Bar */
 
 .nav-bg-color {
-    background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.nav-link {
-    color: var(--white-color) !important;
+.navbar-dark .navbar-toggler {
+  color: var(--white-color);
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--white-color);
 }
 
 .nav-link::before {
-    content: "";
-    position: absolute;
-    left: 8px;
-    bottom: 2px;
-    width: 0%;
-    background-color: var(--white-color);
-    height: 2px;
-    transition: width 0.3s;
-    -webkit-transition: width 0.3s;
-    -moz-transition: width 0.3s;
-    -ms-transition: width 0.3s;
-    -o-transition: width 0.3s;
+  content: "";
+  position: absolute;
+  left: 8px;
+  bottom: 2px;
+  width: 0%;
+  background-color: var(--white-color);
+  height: 2px;
+  transition: width 0.3s;
+  -webkit-transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  -ms-transition: width 0.3s;
+  -o-transition: width 0.3s;
 }
 
 .nav-item:hover .nav-link::before {
-    width: 65%;
+  width: 65%;
 }
 
 .nav-z-index {
-    z-index: 5;
+  z-index: 5;
 }
 
 /* Main */
 
 .main {
-    background-image: linear-gradient(rgba(17, 20, 24, 0.3), rgba(17, 20, 24, 0.3)), url(../images/intro-bg.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+  background-image: linear-gradient(
+      rgba(17, 20, 24, 0.3),
+      rgba(17, 20, 24, 0.3)
+    ),
+    url(../images/intro-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .heading-color {
-    color: var(--heading-color);
+  color: var(--heading-color);
 }
 
 .typed::after {
-  content: '|';
+  content: "|";
   animation: typing 10s infinite;
   -webkit-animation: typing 10s infinite;
 }
 
 @keyframes typing {
-    0% {
-      content: "|";
-    }
-    1% {
-      content: "D|";
-    }
-    2% {
-      content: "De|";
-    }
-    3% {
-      content: "Des|";
-    }
-    4% {
-      content: "Desi|";
-    }
-    5% {
-      content: "Desig|";
-    }
-    6% {
-      content: "Design|";
-    }
-    7% {
-      content: "Designe|";
-    }
-    8% {
-      content: "Designer|";
-    }
-    9% {
-      content: "Designer ";
-    }
-    10% {
-      content: "Designer|";
-    }
-    11% {
-      content: "Designe|";
-    }
-    12% {
-      content: "Design|";
-    }
-    13% {
-      content: "Desig|";
-    }
-    14% {
-      content: "Desi|";
-    }
-    15% {
-      content: "Des|";
-    }
-    16% {
-      content: "De|";
-    }
-    17% {
-      content: "Dev|";
-    }
-    18% {
-      content: "Deve|";
-    }
-    19% {
-      content: "Devel|";
-    }
-    20% {
-      content: "Develo|";
-    }
-    21% {
-      content: "Develop|";
-    }
-    22% {
-      content: "Develope|";
-    }
-    23% {
-      content: "Developer|";
-    }
-    24% {
-      content: "Developer";
-    }
-    25% {
-      content: "Developer|";
-    }
-    26% {
-      content: "Develope|";
-    }
-    27% {
-      content: "Develop|";
-    }
-    28% {
-      content: "Devel|";
-    }
-    29% {
-      content: "Deve|";
-    }
-    30% {
-      content: "Dev|";
-    }
-    31% {
-      content: "De|";
-    }
-    32% {
-      content: "|";
-    }
-    33% {
-      content: "F|";
-    }
-    34% {
-      content: "Fr|";
-    }
-    35% {
-      content: "Fre|";
-    }
-    36% {
-      content: "Free|";
-    }
-    37% {
-      content: "Freel|";
-    }
-    38% {
-      content: "Freela|";
-    }
-    39% {
-      content: "Freelan|";
-    }
-    40% {
-      content: "Freelanc|";
-    }
-    41% {
-      content: "Freelance|";
-    }
-    42% {
-      content: "Freelancer|";
-    }
-    43% {
-      content: "Freelancer ";
-    }
-    44% {
-      content: "Freelancer|";
-    }
-    45% {
-      content: "Freelance|";
-    }
-    46% {
-      content: "Freelanc|";
-    }
-    47% {
-      content: "Freelan|";
-    }
-    48% {
-      content: "Freela|";
-    }
-    49% {
-      content: "Freel|";
-    }
-    50% {
-      content: "Free|";
-    }
-    51% {
-      content: "Fre|";
-    }
-    52% {
-      content: "Fr|";
-    }
-    53% {
-      content: "F|";
-    }
-    54% {
-      content: "|";
-    }
-    55% {
-      content: "P|";
-    }
-    56% {
-      content: "Ph|";
-    }
-    57% {
-      content: "Pho|";
-    }
-    58% {
-      content: "Phot|";
-    }
-    59% {
-      content: "Photo|";
-    }
-    60% {
-      content: "Photog|";
-    }
-    61% {
-      content: "Photogr|";
-    }
-    62% {
-      content: "Photogra|";
-    }
-    63% {
-      content: "Photograp|";
-    }
-    64% {
-      content: "Photograph|";
-    }
-    65% {
-      content: "Photographe|";
-    }
-    66% {
-      content: "Photographer|";
-    }
-    68% {
-      content: "Photographer ";
-    }
-    
-    71% {
-      content: "Photographer|";
-    }
-    
-    74% {
-      content: "Photographer ";
-    }
-    
-    76% {
-      content: "Photographer|";
-    }
-    77% {
-      content: "Photographer|";
-    }
-    78% {
-      content: "Photographe|";
-    }
-    79% {
-      content: "Photographe|";
-    }
-    80% {
-      content: "Photograph|";
-    }
-    81% {
-      content: "Photograph|";
-    }
-    82% {
-      content: "Photograp|";
-    }
-    83% {
-      content: "Photograp|";
-    }
-    84% {
-      content: "Photogra|";
-    }
-    85% {
-      content: "Photogra|";
-    }
-    86% {
-      content: "Photogr|";
-    }
-    87% {
-      content: "Photogr|";
-    }
-    88% {
-      content: "Photog|";
-    }
-    89% {
-      content: "Photog|";
-    }
-    90% {
-      content: "Photo|";
-    }
-    91% {
-      content: "Photo|";
-    }
-    92% {
-      content: "Phot|";
-    }
-    93% {
-      content: "Phot|";
-    }
-    94% {
-      content: "Pho|";
-    }
-    95% {
-      content: "Pho|";
-    }
-    96% {
-      content: "Ph|";
-    }
-    97% {
-      content: "Ph|";
-    }
-    98% {
-      content: "P|";
-    }
-    99% {
-      content: "P|";
-    }
-    100% {
-      content: "|";
-    }
+  0% {
+    content: "|";
+  }
+  1% {
+    content: "D|";
+  }
+  2% {
+    content: "De|";
+  }
+  3% {
+    content: "Des|";
+  }
+  4% {
+    content: "Desi|";
+  }
+  5% {
+    content: "Desig|";
+  }
+  6% {
+    content: "Design|";
+  }
+  7% {
+    content: "Designe|";
+  }
+  8% {
+    content: "Designer|";
+  }
+  9% {
+    content: "Designer ";
+  }
+  10% {
+    content: "Designer|";
+  }
+  11% {
+    content: "Designe|";
+  }
+  12% {
+    content: "Design|";
+  }
+  13% {
+    content: "Desig|";
+  }
+  14% {
+    content: "Desi|";
+  }
+  15% {
+    content: "Des|";
+  }
+  16% {
+    content: "De|";
+  }
+  17% {
+    content: "Dev|";
+  }
+  18% {
+    content: "Deve|";
+  }
+  19% {
+    content: "Devel|";
+  }
+  20% {
+    content: "Develo|";
+  }
+  21% {
+    content: "Develop|";
+  }
+  22% {
+    content: "Develope|";
+  }
+  23% {
+    content: "Developer|";
+  }
+  24% {
+    content: "Developer";
+  }
+  25% {
+    content: "Developer|";
+  }
+  26% {
+    content: "Develope|";
+  }
+  27% {
+    content: "Develop|";
+  }
+  28% {
+    content: "Devel|";
+  }
+  29% {
+    content: "Deve|";
+  }
+  30% {
+    content: "Dev|";
+  }
+  31% {
+    content: "De|";
+  }
+  32% {
+    content: "|";
+  }
+  33% {
+    content: "F|";
+  }
+  34% {
+    content: "Fr|";
+  }
+  35% {
+    content: "Fre|";
+  }
+  36% {
+    content: "Free|";
+  }
+  37% {
+    content: "Freel|";
+  }
+  38% {
+    content: "Freela|";
+  }
+  39% {
+    content: "Freelan|";
+  }
+  40% {
+    content: "Freelanc|";
+  }
+  41% {
+    content: "Freelance|";
+  }
+  42% {
+    content: "Freelancer|";
+  }
+  43% {
+    content: "Freelancer ";
+  }
+  44% {
+    content: "Freelancer|";
+  }
+  45% {
+    content: "Freelance|";
+  }
+  46% {
+    content: "Freelanc|";
+  }
+  47% {
+    content: "Freelan|";
+  }
+  48% {
+    content: "Freela|";
+  }
+  49% {
+    content: "Freel|";
+  }
+  50% {
+    content: "Free|";
+  }
+  51% {
+    content: "Fre|";
+  }
+  52% {
+    content: "Fr|";
+  }
+  53% {
+    content: "F|";
+  }
+  54% {
+    content: "|";
+  }
+  55% {
+    content: "P|";
+  }
+  56% {
+    content: "Ph|";
+  }
+  57% {
+    content: "Pho|";
+  }
+  58% {
+    content: "Phot|";
+  }
+  59% {
+    content: "Photo|";
+  }
+  60% {
+    content: "Photog|";
+  }
+  61% {
+    content: "Photogr|";
+  }
+  62% {
+    content: "Photogra|";
+  }
+  63% {
+    content: "Photograp|";
+  }
+  64% {
+    content: "Photograph|";
+  }
+  65% {
+    content: "Photographe|";
+  }
+  66% {
+    content: "Photographer|";
+  }
+  68% {
+    content: "Photographer ";
+  }
+
+  71% {
+    content: "Photographer|";
+  }
+
+  74% {
+    content: "Photographer ";
+  }
+
+  76% {
+    content: "Photographer|";
+  }
+  77% {
+    content: "Photographer|";
+  }
+  78% {
+    content: "Photographe|";
+  }
+  79% {
+    content: "Photographe|";
+  }
+  80% {
+    content: "Photograph|";
+  }
+  81% {
+    content: "Photograph|";
+  }
+  82% {
+    content: "Photograp|";
+  }
+  83% {
+    content: "Photograp|";
+  }
+  84% {
+    content: "Photogra|";
+  }
+  85% {
+    content: "Photogra|";
+  }
+  86% {
+    content: "Photogr|";
+  }
+  87% {
+    content: "Photogr|";
+  }
+  88% {
+    content: "Photog|";
+  }
+  89% {
+    content: "Photog|";
+  }
+  90% {
+    content: "Photo|";
+  }
+  91% {
+    content: "Photo|";
+  }
+  92% {
+    content: "Phot|";
+  }
+  93% {
+    content: "Phot|";
+  }
+  94% {
+    content: "Pho|";
+  }
+  95% {
+    content: "Pho|";
+  }
+  96% {
+    content: "Ph|";
+  }
+  97% {
+    content: "Ph|";
+  }
+  98% {
+    content: "P|";
+  }
+  99% {
+    content: "P|";
+  }
+  100% {
+    content: "|";
+  }
 }
 
 /* About */
 
 .progress-h {
-    height: 10px;
+  height: 10px;
 }
 
 .about-title {
-    font-size: 2rem;
-    word-spacing: 3px;
+  font-size: 2rem;
+  word-spacing: 3px;
 }
 
 .about-title::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    width: 24%;
-    background-color: var(--blue-color);
-    height: 3px;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 24%;
+  background-color: var(--blue-color);
+  height: 3px;
 }
 
 div.heading-color::before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -25px;
-    width: 4%;
-    background-color: var(--blue-color);
-    height: 6px;
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -25px;
+  width: 4%;
+  background-color: var(--blue-color);
+  height: 6px;
 }
 
 .rounded-15 {
-    border-radius: 15px;
+  border-radius: 15px;
 }
 
 /* Services */
 
 .services-icon i {
-    font-size: 2.5rem;
-    padding: 1.875rem;
-    border: 10px solid var(--blue-color);
-    border-radius: 50%;
-    transition: border-color 0.5s, background-color 0.5s, color 0.5s;
+  font-size: 2.5rem;
+  padding: 1.875rem;
+  border: 10px solid var(--blue-color);
+  border-radius: 50%;
+  transition: border-color 0.5s, background-color 0.5s, color 0.5s;
 }
 
 .services-card:hover .services-icon i {
-    color: var(--white-color);
-    background-color: var(--blue-color);
-    border-color: var(--border-hover-color);
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  border-color: var(--border-hover-color);
 }
 
 /* Overlay */
 
 .overlay {
-    background:linear-gradient(rgba(0, 120, 255,0.7),rgba(0, 120, 255,0.7)), url(../images/counters-bg.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+  background: linear-gradient(rgba(0, 120, 255, 0.7), rgba(0, 120, 255, 0.7)),
+    url(../images/counters-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 .overlay-icon i {
-    font-size: 1.2rem;
-    padding: 1.2rem;
-    border: 8px solid var(--border-hover-color);
-    border-radius: 50%;
+  font-size: 1.2rem;
+  padding: 1.2rem;
+  border: 8px solid var(--border-hover-color);
+  border-radius: 50%;
 }
 
 /* Portfolio */
 
 .card-img .card-img-top {
-    transition: transform ease-out 0.7s;
+  transition: transform ease-out 0.7s;
 }
 
 .card:hover .card-img .card-img-top {
-    transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
 }
 
 .card-text span {
-    color: var(--blue-color);
+  color: var(--blue-color);
 }
 
 .card-text {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 .card-body i {
-   color:var(--blue-color)
+  color: var(--blue-color);
 }
 
 /* Testimonials */
 
 .testimonials,
 .contact {
-    background:linear-gradient(rgba(0, 120, 255,0.7),rgba(0, 120, 255,0.7)), url(../images/overlay-bg.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+  background: linear-gradient(rgba(0, 120, 255, 0.7), rgba(0, 120, 255, 0.7)),
+    url(../images/overlay-bg.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 .testimonials p {
-    padding: 0 13rem;
+  padding: 0 13rem;
 }
 
 .carousel-indicators [data-bs-target] {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }
 
 /* Blog */
 
 .blog .card-body .text-fs {
-    font-size: 0.7rem;
+  font-size: 0.7rem;
 }
 
 .blog .card-title a {
-    color: var(--heading-color);
-    transition: color 0.5s;
+  color: var(--heading-color);
+  transition: color 0.5s;
 }
 
 .card-footer-info a {
-    color: var(--p-color);
-    transition: color 0.5s;
+  color: var(--p-color);
+  transition: color 0.5s;
 }
 
 .blog .card-title a:hover,
 .card-footer-info a:hover {
-    color: var(--blue-color);
+  color: var(--blue-color);
 }
 
 .img-5 {
-    width: 12%;
-    height: 12%;
+  width: 12%;
+  height: 12%;
 }
 
 /* Contact */
 
 .contact {
-    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
 
 .input-border {
-    border: 1px solid #ccc;
+  border: 1px solid #ccc;
 }
 
 .send-btn {
@@ -541,41 +552,75 @@ div.heading-color::before {
 }
 
 .send-btn:hover {
-    background-color: var(--btn-hover-color);
-    border-color: var(--border-hover-color);
+  background-color: var(--btn-hover-color);
+  border-color: var(--border-hover-color);
 }
 
 .list-group-item i {
-    color: var(--blue-color);
+  color: var(--blue-color);
 }
 
 .social-borders {
-    border: 2px solid var(--blue-color);
-    transition: border-color 0.5s, background-color 0.5s, color 0.5s;
+  border: 2px solid var(--blue-color);
+  transition: border-color 0.5s, background-color 0.5s, color 0.5s;
 }
 
 .social-borders:hover {
-    border-color: var(--border-hover-color);
-    background-color: var(--blue-color);
-    color: var(--white-color);
+  border-color: var(--border-hover-color);
+  background-color: var(--blue-color);
+  color: var(--white-color);
 }
 
 /* Footer */
 
 .footer {
-    background-color: var(--footer-bg-color);
+  background-color: var(--footer-bg-color);
 }
 
 .footer p {
-    color: var(--white-color);
-    
+  color: var(--white-color);
 }
 
 /* Responsive Screens */
 
 @media screen and (max-width: 1100px) {
-    
-    .testimonials p {
-        padding: 0 0.7rem;
-    }
+  .testimonials p {
+    padding: 0 0.7rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* Navbar */
+  .nav-link::before {
+    height: 0px;
+  }
+
+  .nav-mob {
+    background-color: var(--white-color);
+    position: absolute;
+    top: 100%;
+    left: 1%;
+    right: 1%;
+    padding: 1%;
+    z-index: 10;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: var(--p-color);
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+  }
+
+  .navbar-dark .navbar-nav .nav-link.active,
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--blue-color);
+  }
+
+  /* Testimonials */
+  .testimonials p {
+    padding: 0 0.7rem;
+  }
 }
